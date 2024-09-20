@@ -3,4 +3,38 @@
     font-weight: 400;
     font-style: normal;
     font-size: 25px;
+    color: white;
+}
+
+.img {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1817070/ss_7be97aa12cfc0e8feccdbb95dac3de71480f2140.1920x1080.jpg?t=1725652915);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.border {
+    border-color: rgba(255, 255, 255, 0.337);
+}
+
+.home-text {
+    /* font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal; */
+    font-family: "Permanent Marker", cursive;
+    font-weight: 200;
+    font-style: normal;
+    color: white;
+    font-size: 30px;
+}
+
+.title {
+    font-family: "Bungee Tint", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+}
+.card{
+    transition: transform 0.3s ease;
 }
