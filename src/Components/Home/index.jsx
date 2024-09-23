@@ -1,8 +1,25 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Button from '../Button'
 import MovieList from '../MovieList'
+import Footer from '../Footer';
+
+const api_key = "9b702a6b89b0278738dab62417267c49";
+const main_url = "https://api.themoviedb.org/3";
+const api_url = `${main_url}/discover/movie?sort_by=popularity.desc&api_key=${api_key}`;
 
 function Home() {
+    const [movies, setMovies] = useState([]);
+    useEffect(() => {
+        fetchMovies(api_url);
+    }, []);
+
+    const fetchMovies = (url) => {
+        fetch(url)
+            .then((res) => res.json())
+            .then((data) => {
+                setMovies(data.results);
+            });
+    };
     return (
         <div className="img">
             <div className="w-full h-[100vh] bg-[#00000071] flex justify-center items-center" >
@@ -18,7 +35,8 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <MovieList/>
+            <MovieList movies={movies} />
+            <Footer/>
         </div>
 
     )

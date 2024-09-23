@@ -79,7 +79,6 @@ function Header() {
                     </div>
                 </div>
             </header>
-            <MovieList movies={movies} />
         </div>
     )
 }

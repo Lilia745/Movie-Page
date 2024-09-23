@@ -1,12 +1,11 @@
 import React from 'react'
 import MovieCard from '../MovieCard'
 
-function MovieList({ movies }) {
-    console.log(movies);
+function MovieList({ movies}) {
     return (
         <div className="flex justify-center flex-wrap gap-[20px]">
-            {/* {movies.map((movies) => (
-                <MovieCard key={movies.id} movie={movies} />
+            {/* {movies.map((movie,id) => (
+                <MovieCard key={movie.id} movie={movie} />
             ))} */}
         </div>
     )
