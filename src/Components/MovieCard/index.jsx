@@ -2,18 +2,20 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const img_url = "https://image.tmdb.org/t/p/w500";
+const comedy = main_url + "/discover/movie?" + api_key + "&with_genres=35"
 
-function MovieCard({ movies }) {
-    return (
-        <div className="overflow-hidden rounded-[10px] w-[200px] card">
-            <Link to={`/movie/${movies.id}`}>
-                <img src={`${img_url}${movies.poster_path}`} alt={movies.title} />
-                <div className="p-[15px] text-center">
-                    <h3 className="text-[18px] m-[10px]">{movies.title}</h3>
-                </div>
-            </Link>
-        </div>
-    );
+function MovieCard({ movie }) {
+  return (
+    <div className="overflow-hidden rounded-[12px] w-[250px] card bg-[rgba(255,255,255,0.2)] p-[10px]">
+      <Link to={`/movie/${movie.id}`}>
+        <img
+          src={`${img_url}${movie.poster_path}`}
+          alt={movie.title}
+          className="w-full border-[rgba(255,255,255,0.2)] rounded-[12px]"
+        />
+      </Link>
+    </div>
+  );
 }
 
 export default MovieCard;

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
     return (
-        <footer className="w-full p-[10px] bg-black flex justify-between items-center border-t-gray">
+        <footer className="w-full p-[10px] bg-black flex justify-between items-center border">
             <div className="flex justify-center items-center gap-[40px]">
                 <h4 className="text-[16px] text-gray">© 2023 STREAM X. All Rights Reserved.</h4>
                 <p className="text-[16px] text-gray">Terms Of Use </p>
