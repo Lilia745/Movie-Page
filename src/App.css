@@ -35,6 +35,99 @@
   font-style: normal;
   font-size: 45px;
 }
+
 .card {
   transition: transform 0.3s ease;
+}
+
+.icon {
+  gap: 15px;
+}
+
+.icon ion-icon {
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-right: 15px;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.ionIcon ion-icon {
+  font-size: 30px;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #282c34;
+  color: #61dafb;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 8px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #61dafb;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-container p {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.imgs {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ganre {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.ganre1{
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 15px;
+}
+
+.M-title {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.overview{
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+.actiors{
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
 }

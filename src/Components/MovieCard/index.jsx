@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const img_url = "https://image.tmdb.org/t/p/w500";
-const comedy = main_url + "/discover/movie?" + api_key + "&with_genres=35"
 
 function MovieCard({ movie }) {
   return (

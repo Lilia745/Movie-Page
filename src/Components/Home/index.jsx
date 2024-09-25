@@ -6,6 +6,7 @@ import Footer from '../Footer';
 const api_key = "9b702a6b89b0278738dab62417267c49";
 const main_url = "https://api.themoviedb.org/3";
 const api_url = `${main_url}/discover/movie?sort_by=popularity.desc&api_key=${api_key}`;
+const comedy = main_url + "/discover/movie?" + api_key + "&with_genres=35"
 let ganre = [
     { id: 28, name: "Action" },
     { id: 12, name: "Adventure" },
@@ -32,7 +33,7 @@ function Home() {
     const [movies, setMovies] = useState([]);
     
     useEffect(() => {
-        fetchMovies(api_url);
+        fetchMovies(api_url,comedy);
     }, []);
 
     const fetchMovies = (url) => {

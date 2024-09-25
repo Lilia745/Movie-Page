@@ -6,9 +6,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation } from "swiper/modules";
 
-function MovieList({ movies, text }) {
-    console.log(movies);
-    
+function MovieList({ movies, text }) {    
   return (
     <div className=" bg-black p-[20px]">
       <h1 className="text-[28px] text-[white]">{text} </h1>
