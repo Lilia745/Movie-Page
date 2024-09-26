@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom';
+import MovieList from "../MovieList"
+import Home from "../Home"
+import Footer from "../Footer";
 const api_key = "9b702a6b89b0278738dab62417267c49";
 const main_url = "https://api.themoviedb.org/3";
 const api_url = `${main_url}/discover/movie?sort_by=popularity.desc&api_key=${api_key}`;
@@ -20,6 +23,8 @@ function Header() {
             .then((res) => res.json())
             .then((data) => {
                 setMovies(data.results);
+                console.log(searchTerm);
+                
             });
     };
 
@@ -33,7 +38,7 @@ function Header() {
 
     return (
         <div>
-            <header className="flex justify-between items-center w-full fixed p-[20px] z-[111]">
+            <header className="flex justify-between items-center w-full fixed p-[20px] z-[111] bg-[rgba(0,0,0,0.26)]">
                 <div className="flex justify-center items-center">
                     <div className="mr-[30px]">
                         <Link to="/" className="text">STREAM</Link><span className="text-[30px] text-[#c22a2a] font-extrabold">X</span>
@@ -76,6 +81,9 @@ function Header() {
                     )
                 }
             </header>
+            <Home/>
+            <MovieList movies={movies} text="Latest & Trending "/>
+            <Footer/>
         </div>
     )
 }
