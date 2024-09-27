@@ -38,6 +38,10 @@
 
 .card {
   transition: transform 0.3s ease;
+  &:hover{
+    transition: transform 0.3s ease;
+    transform: translateY(-2px);
+  }
 }
 
 .icon {
@@ -130,8 +134,4 @@
   font-family: "Abril Fatface", serif;
   font-weight: 400;
   font-style: normal;
-}
-.movie:hover{
-  transition: transform 0.3s ease;
-    transform: translateY(-2px);
 }
