@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../Button";
 import { BsInstagram, BsTwitter } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -77,9 +78,7 @@ function Footer() {
           <p className="text-[16px] text-gray">FAQ</p>
         </div>
         <div className="mr-[30px]">
-          <a href="" className="text">
-            STREAM
-          </a>
+          <Link to="/" className="text">STREAM</Link>
           <span className="text-[30px] text-[#c22a2a] font-extrabold">X</span>
         </div>
       </div>

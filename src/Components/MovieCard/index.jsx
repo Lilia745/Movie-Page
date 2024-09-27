@@ -14,7 +14,7 @@ function MovieCard({ movie }) {
         <img
           src={`${img_url}${movie.poster_path}`}
           alt={movie.title}
-          className="w-full border-[rgba(255,255,255,0.2)] rounded-[12px]"
+          className="w-full border-[rgba(255,255,255,0.2)] rounded-[12px] movie"
         />
       </Link>
     </div>
