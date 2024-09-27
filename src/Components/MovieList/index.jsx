@@ -11,7 +11,7 @@ function MovieList({ movies, text }) {
     <div className=" bg-black p-[20px]">
       <h1 className="text-[28px] text-[white]">{text} </h1>
       <Swiper
-        className="m-3 p-5"
+        className="m-3 pt-[10px] rounded-xl"
         modules={[Navigation]}
         spaceBetween={5}
         slidesPerView={5}

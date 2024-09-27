@@ -9,12 +9,12 @@ const api_url = `${main_url}/discover/movie?sort_by=popularity.desc&api_key=${ap
 function MovieCard({ movie }) {
 
   return (
-    <div className="overflow-hidden rounded-[12px] w-[250px] card bg-[rgba(255,255,255,0.2)] p-[10px]">
+    <div className="overflow-hidden rounded-[12px] w-[250px] card bg-[rgba(255,255,255,0.2)] p-[15px] movie">
       <Link to={`/movie/${movie.id}`}>
         <img
           src={`${img_url}${movie.poster_path}`}
           alt={movie.title}
-          className="w-full border-[rgba(255,255,255,0.2)] rounded-[12px] movie"
+          className="w-full border-[rgba(255,255,255,0.2)] rounded-[12px]"
         />
       </Link>
     </div>

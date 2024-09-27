@@ -133,5 +133,5 @@
 }
 .movie:hover{
   transition: transform 0.3s ease;
-    transform: translateY(-3px);
+    transform: translateY(-2px);
 }
